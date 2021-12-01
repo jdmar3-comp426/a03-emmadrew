@@ -12,7 +12,6 @@ export function sumToString(a, b) {
     return '${a} + ${b} = ${a + b)';
 }
 
-
 /**
  *
  * @param {number} startNumber
