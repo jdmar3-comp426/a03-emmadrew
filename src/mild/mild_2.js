@@ -23,15 +23,11 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
-   let returnPhrase = `[`;
-
-   array.forEach(element => {
-      returnPhrase += `,
-      ` + identifyVariable(element);
-   });
-   returnPhrase += `
-]`;
-   return returnPhrase;
+   let returnArray = [];
+   for (let i=0; i < array.length; i++) {
+      returnArray.push(identifyVariable(array[i]));
+   }
+   return returnArray;
 }
 
 /**
