@@ -24,12 +24,8 @@ export const allCarStats = {
         city: getCityMpg(mpg_data),
         highway: getHighwayMpg(mpg_data)
     },
-    allYearStats: {
-        getYearStats(mpg_data)
-    },
-    ratioHybrids: {
-        getRatioHybrids(mpg_data)
-    }
+    allYearStats: getYearStats(mpg_data),
+    ratioHybrids: getRatioHybrids(mpg_data),
 };
 
 
