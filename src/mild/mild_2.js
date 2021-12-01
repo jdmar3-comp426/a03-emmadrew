@@ -96,5 +96,9 @@ export function removeKeyNonDestructive(object, key) {
  * @return {*} The object with its keys removed.
  */
 export function removeKeys(object, keyList) {
-
+   let varClone = {...object};
+   for (let i=0; i<keyList.length; i++) {
+      removeKey(varClone,keyList[i]);
+   }
+   return varClone;
 }

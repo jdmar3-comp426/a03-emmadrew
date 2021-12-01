@@ -5,13 +5,14 @@ import { sumToString, getIncreasingArray, maxAndMin, countArray } from "./src/mi
 // console.log(maxAndMin([1,4,6,7,4,11,4]));
 // console.log(countArray([2,5,7,3,1,2,3,4,6]));
 
-import {identifyVariable, identifyArray, removeKeyNonDestructive} from "./src/mild/mild_2.js";
+import {identifyVariable, identifyArray, removeKeyNonDestructive, removeKeys} from "./src/mild/mild_2.js";
 // console.log(identifyVariable("hello"));
-console.log(identifyArray(getIncreasingArray(3,8)));
+// console.log(identifyArray(getIncreasingArray(3,8)));
 let obj = {
     name: 'Mr. Boss',
     title: 'boss',
     age: 33,
     password: 'pass123'
 };
-console.log(removeKeyNonDestructive(obj, 'password'));
+// console.log(removeKeyNonDestructive(obj, 'password'));
+console.log(removeKeys(obj, ['title', 'age']));
