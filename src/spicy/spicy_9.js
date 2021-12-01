@@ -164,16 +164,18 @@ export const someEven = (arr, test) => {
  */
 export const filter = (arr, test) => {
     let returnObj = {'pass': [], 'fail': []};
-    var count=0;
+    var countPass=0;
+    var countFail=0;
 
     for (let i=0; i < arr.length; i++) {
         if (!((arr[i])%2==0)) {
             if (!(test(arr[i]))) {
-                returnObj.fail[count] = arr[i];
+                returnObj.fail[countFail] = arr[i];
+                countFail++;
                 } else {
-                    returnObj.pass[count] = arr[i];
+                    returnObj.pass[countPass] = arr[i];
+                    countPass++;
                 }
-            count++;
         }
     }
     return returnObj;
