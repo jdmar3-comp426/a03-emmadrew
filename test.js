@@ -20,4 +20,8 @@ import {identifyVariable, identifyArray, removeKeyNonDestructive, removeKeys} fr
 import { getSum, getMedian, getStatistics } from "./src/medium/medium_1.js";
 // console.log(getSum(getIncreasingArray(1,4)));
 // console.log(getMedian([5,1,2,3]));
-console.log(getStatistics([1,2,3,7,100,0,9,11]));
+// console.log(getStatistics([1,2,3,7,100,0,9,11]));
+
+import { repeat, repeatDemo } from "./src/spicy/spicy_9.js";
+
+console.log(repeatDemo());
