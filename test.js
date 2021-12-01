@@ -17,5 +17,6 @@ import {identifyVariable, identifyArray, removeKeyNonDestructive, removeKeys} fr
 // // console.log(removeKeyNonDestructive(obj, 'password'));
 // console.log(removeKeys(obj, ['title', 'age']));
 
-import { getSum } from "./src/medium/medium_1.js";
-console.log(getSum(getIncreasingArray(1,4)));
+import { getSum, getMedian } from "./src/medium/medium_1.js";
+// console.log(getSum(getIncreasingArray(1,4)));
+console.log(getMedian([5,1,2,3]));
