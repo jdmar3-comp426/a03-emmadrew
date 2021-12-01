@@ -100,7 +100,7 @@ export const everyEven = (arr, test) => {
     for (let i=0; i<arr.length; i++) {
         if (i%2==0) {
             return false;
-        } if (!test(array[i])) {
+        } if (!(test(array[i]))) {
             return false;
         }
     }
