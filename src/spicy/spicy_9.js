@@ -170,11 +170,11 @@ export const filter = (arr, test) => {
 
     for (let i=0; i < arr.length; i++) {
         if (!((arr[i])%2==0)) {
-            if (test(arr[i])) {
-                returnObj.pass[count] = arr[i];
-            } else {
+            if (!(test(arr[i]))) {
                 returnObj.fail[count] = arr[i];
-            }
+                } else {
+                    returnObj.pass[count] = arr[i];
+                }
             count++;
         }
     }
