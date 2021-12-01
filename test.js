@@ -7,7 +7,7 @@ import { sumToString, getIncreasingArray, maxAndMin, countArray } from "./src/mi
 
 import {identifyVariable, identifyArray, removeKeyNonDestructive, removeKeys} from "./src/mild/mild_2.js";
 // console.log(identifyVariable("hello"));
-// console.log(identifyArray(getIncreasingArray(3,8)));
+console.log(identifyArray(getIncreasingArray(3,8)));
 // let obj = {
 //     name: 'Mr. Boss',
 //     title: 'boss',
