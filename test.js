@@ -24,4 +24,4 @@ import { getSum, getMedian, getStatistics } from "./src/medium/medium_1.js";
 
 import { repeat, repeatDemo, multiplyBy } from "./src/spicy/spicy_9.js";
 //console.log(repeatDemo());
-console.log(multiplyBy(1,3));
+// console.log(multiplyBy(1,3));
