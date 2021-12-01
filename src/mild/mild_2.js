@@ -22,6 +22,8 @@ export function identifyVariable(variable) {
  ]
 
  */
+
+ // DOES NOT WORK YET ????? WHY, OUTPUT LOOKS LIKE IT MATCHES
 export function identifyArray(array) {
    let returnArray = [];
    for (let i=0; i < array.length; i++) {
@@ -47,7 +49,7 @@ export function identifyArray(array) {
  obj now does not contain the `password` field
  */
 export function removeKey(object, key) {
-
+   delete(object[key]);
 }
 
 /**
