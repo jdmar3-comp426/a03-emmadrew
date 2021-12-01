@@ -29,4 +29,4 @@ import { repeat, repeatDemo, multiplyBy, tenTimes, tenTimesFifty, everyEven, som
 // console.log(tenTimesFifty());
 // console.log(everyEven([2,4,6,8],everyEven));
 // console.log(someEven([0,0,0,0,0], someEven));
-console.log(filter(['yes', 'nope', 'maybe', 'yellow'], x => x[0] === 'y'));
+// console.log(filter(['yes', 'nope', 'maybe', 'yellow'], x => x[0] === 'y'));
