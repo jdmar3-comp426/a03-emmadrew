@@ -166,15 +166,19 @@ export const filter = (arr, test) => {
     let returnObj = new Object;
     returnObj.fail = [];
     returnObj.pass = [];
+    var count=0;
 
     for (let i=0; i < arr.length; i++) {
         if (!((arr[i])%2==0)) {
             if (test(arr[i])) {
-                return true;
+                returnObj.pass[count] = arr[i];
+            } else {
+                returnObj.fail[count] = arr[i];
             }
+            count++;
         }
     }
-    return false;
+    return returnObj;
 };
 
 
