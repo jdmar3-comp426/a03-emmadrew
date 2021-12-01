@@ -72,7 +72,7 @@ export function getStatistics(array) {
     for (let i = 0; i < array.length; i++) {
         variance += (array[i] - mean)**2;
     }
-    returnObj.variance = variance/(array.length-1);
+    returnObj.variance = variance/(array.length);
     returnObj.standard_deviation = variance**(1/2);
     
     return returnObj;
