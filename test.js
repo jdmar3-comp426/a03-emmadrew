@@ -22,8 +22,9 @@ import { getSum, getMedian, getStatistics } from "./src/medium/medium_1.js";
 // console.log(getMedian([5,1,2,3]));
 // console.log(getStatistics([1,2,3,7,100,0,9,11]));
 
-import { repeat, repeatDemo, multiplyBy, tenTimes, tenTimesFifty } from "./src/spicy/spicy_9.js";
+import { repeat, repeatDemo, multiplyBy, tenTimes, tenTimesFifty, everyEven } from "./src/spicy/spicy_9.js";
 // console.log(repeatDemo());
 // console.log(multiplyBy(1,3));
 // console.log(tenTimes(50));
-console.log(tenTimesFifty());
+// console.log(tenTimesFifty());
+console.log(everyEven([2,4,6,8],everyEven));
