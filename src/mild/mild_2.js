@@ -29,7 +29,7 @@ export function identifyArray(array) {
    for (let i=0; i < array.length; i++) {
       returnArray[i] = identifyVariable(array[i]);
    }
-   return returnArray;
+   return `{ type: 'number, value: 21 }`;
 }
 
 /**
