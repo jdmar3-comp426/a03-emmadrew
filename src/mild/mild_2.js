@@ -70,7 +70,7 @@ export function removeKey(object, key) {
  */
 export function removeKeyNonDestructive(object, key) {
    let varClone = object;
-   delete(varClone[key]);
+   removeKey(varClone, key);
    return varClone;
 }
 
