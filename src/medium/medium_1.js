@@ -69,10 +69,10 @@ export function getStatistics(array) {
 
     var mean = returnObj.sum/returnObj.length;
     var variance = 0;
-    for (let i = 0; i < returnObj.length; i++) {
-        variance += (returnObj[i] - mean)^2;
+    for (let i = 0; i < array.length; i++) {
+        variance += (array[i] - mean)^2;
     }
-    returnObj.variance = variance/(returnObj.length-1);
+    returnObj.variance = variance/(array.length-1);
     returnObj.standard_deviation = variance^(1/2);
     
     return returnObj;
