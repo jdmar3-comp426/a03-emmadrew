@@ -26,7 +26,7 @@ export function identifyArray(array) {
    let returnPhrase = `[`;
 
    array.forEach(element => {
-      returnPhrase += `
+      returnPhrase += `,
       ` + identifyVariable(element);
    });
    returnPhrase += `
