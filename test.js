@@ -5,7 +5,6 @@ import { sumToString, getIncreasingArray, maxAndMin, countArray } from "./src/mi
 // console.log(maxAndMin([1,4,6,7,4,11,4]));
 // console.log(countArray([2,5,7,3,1,2,3,4,6]));
 
-import {identifyVariable} from "./src/mild/mild_2.js";
-console.log(identifyVariable("hello"));
-console.log(identifyVariable(55));
-console.log(identifyVariable(true));
+import {identifyVariable, identifyArray } from "./src/mild/mild_2.js";
+// console.log(identifyVariable("hello"));
+console.log(identifyArray(getIncreasingArray(3,8)));

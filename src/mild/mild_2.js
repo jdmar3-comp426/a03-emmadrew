@@ -9,7 +9,6 @@ export function identifyVariable(variable) {
    return `{ type: '${typeof variable}', value: '${variable}' }`;
 }
 
-
 /**
  *
  * @param array
@@ -24,7 +23,15 @@ export function identifyVariable(variable) {
 
  */
 export function identifyArray(array) {
+   let returnPhrase = `[`;
 
+   array.forEach(element => {
+      returnPhrase += `
+      ` + identifyVariable(element);
+   });
+   returnPhrase += `
+]`;
+   return returnPhrase;
 }
 
 /**
