@@ -27,7 +27,7 @@ export function identifyVariable(variable) {
 export function identifyArray(array) {
    let returnArray = [];
    for (let i=0; i < array.length; i++) {
-      returnArray[i] = identifyVariable(array[i]);
+      returnArray[i].type = identifyVariable(array[i]).type, returnArray[i].value = identifyVariable(array[i].value);
    }
    return `{ type: 'number', value: 21 }`;
 }
