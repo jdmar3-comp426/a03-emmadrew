@@ -1,3 +1,4 @@
+import { getIncreasingArray } from "../mild/mild_1.js";
 import {variance} from "./data/stats_helpers.js";
 
 /**
@@ -8,7 +9,11 @@ import {variance} from "./data/stats_helpers.js";
  * prototype functions. Very useful
  */
 export function getSum(array) {
-
+    let counter = 0;
+    for (let i=0; i < array.length; i++) {
+        counter += array[i];
+    }
+    return counter;
 }
 
 
@@ -22,7 +27,15 @@ export function getSum(array) {
  * console.log(getMedian(array)); // 4.5
  */
 export function getMedian(array) {
-
+    array.sort((a, b) => a - b);
+    let size = array.length;
+    if (size%2!==0) {
+        return array[size/2];
+    } else {
+        let lowVar=array[(size/2) - 1];
+        let highVar=array[size/2];
+        return (highVar+lowVar)/2;
+    }
 }
 
 /**
@@ -45,6 +58,23 @@ export function getMedian(array) {
  }
  */
 export function getStatistics(array) {
+    let returnObj = new Object;
+    var sortedArray = array.sort((a, b) => a - b);
+    returnObj.length = array.length;
+    returnObj.sum = getSum(array);
+    returnObj.mean = returnObj.sum/returnObj.length;
+    returnObj.median = getMedian(array);
+    returnObj.min = sortedArray[0];
+    returnObj.max = sortedArray[array.length - 1];
 
+    var mean = returnObj.sum/returnObj.length;
+    var variance = 0;
+    for (let i = 0; i < array.length; i++) {
+        variance += (array[i] - mean)**2;
+    }
+    returnObj.variance = variance/(array.length);
+    returnObj.standard_deviation = returnObj.variance**(1/2);
+    
+    return returnObj;
 }
 
